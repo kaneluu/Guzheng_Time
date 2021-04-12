@@ -1621,7 +1621,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 416.98, y: 131}
+  m_AnchoredPosition: {x: 417.02, y: 163}
   m_SizeDelta: {x: 834.0338, y: 387.16003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1391431829
@@ -1647,8 +1647,9 @@ MonoBehaviour:
 
 
     When the icon of the instrument coming down vertically, the player
-    will need to press the icon accordingly to the Left, Up, Down, and Right buttons
-    on their keyboard. The yellow part of the icon indicates the direction of it.'
+    will need to press the icon accordingly to the Left, Up, Down, and Right arrow
+    buttons on their keyboard. The yellow part of the icon indicates the direction
+    of it.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
