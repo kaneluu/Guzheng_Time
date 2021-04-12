@@ -14,6 +14,9 @@ public class PressedButtons : MonoBehaviour
     //a GameObject variable for our note
     GameObject note;
 
+    public bool createNote;
+    public GameObject generatedNote;
+
     void Awake()
     {
         sRen = GetComponent<SpriteRenderer>();
@@ -26,13 +29,21 @@ public class PressedButtons : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(Key))
-            StartCoroutine(Press());
-
-        if(Input.GetKeyDown(Key) && pressed)
+        if (createNote && Input.GetKeyDown(Key))
         {
-            Destroy(note);
-            StartCoroutine(Press());
+            if (Input.GetKeyDown(Key))
+                Instantiate(generatedNote, transform.position, Quaternion.identity);
+        }
+        else
+        {
+            if (Input.GetKeyDown(Key))
+                StartCoroutine(Press());
+
+            if (Input.GetKeyDown(Key) && pressed)
+            {
+                Destroy(note);
+                StartCoroutine(Press());
+            }
         }
     }
 

@@ -9,7 +9,6 @@ public class MainSceneButtons : MonoBehaviour
     public Button PlayButton;
     public Button QuitButton;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -21,16 +20,7 @@ public class MainSceneButtons : MonoBehaviour
             GetComponent<Button>();
         QuitButton.onClick.AddListener(() => Quit());
 
-
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-
 
     public void Quit()
     {
