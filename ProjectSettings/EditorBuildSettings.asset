@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutorial.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Select Songs.unity
+    path: Assets/Scenes/Level-1.unity
     guid: bf57045975b61496eb0f05ac1e696b05
   m_configObjects: {}
