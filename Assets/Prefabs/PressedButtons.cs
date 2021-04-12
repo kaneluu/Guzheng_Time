@@ -14,6 +14,7 @@ public class PressedButtons : MonoBehaviour
     //a GameObject variable for our note
     GameObject note;
 
+    //to create icons for the songs based on the beat
     public bool createNote;
     public GameObject generatedNote;
 
@@ -29,11 +30,13 @@ public class PressedButtons : MonoBehaviour
 
     void Update()
     {
+        //This is to generate the icons for our song's BPM
         if (createNote && Input.GetKeyDown(Key))
         {
             if (Input.GetKeyDown(Key))
                 Instantiate(generatedNote, transform.position, Quaternion.identity);
         }
+
         else
         {
             if (Input.GetKeyDown(Key))
