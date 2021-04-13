@@ -8,6 +8,7 @@ public class Instruction : MonoBehaviour
 {
     public Button TutorialButton;
     public Button SkipButton;
+    public Button BackButton;
    
 
     // Start is called before the first frame update
@@ -15,13 +16,16 @@ public class Instruction : MonoBehaviour
     {
         TutorialButton = GameObject.Find("Tutorial Button").
             GetComponent<Button>();
-        TutorialButton.onClick.AddListener(() => CharacterScene(2));
+        TutorialButton.onClick.AddListener(() => CharacterScene("Tutorial"));
         SkipButton = GameObject.Find("Skip Button").
                     GetComponent<Button>();
-        SkipButton.onClick.AddListener(() => CharacterScene(3));
+        SkipButton.onClick.AddListener(() => CharacterScene("Level-1"));
+        BackButton = GameObject.Find("Main Button").
+                    GetComponent<Button>();
+        BackButton.onClick.AddListener(() => CharacterScene("Main"));
     }
 
-    public void CharacterScene(int level)
+    public void CharacterScene(string level)
     {
         SceneManager.LoadScene(level);
     }

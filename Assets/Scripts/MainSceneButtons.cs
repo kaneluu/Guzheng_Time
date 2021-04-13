@@ -15,7 +15,7 @@ public class MainSceneButtons : MonoBehaviour
 
         PlayButton = GameObject.Find("Play Button").
             GetComponent<Button>();
-        PlayButton.onClick.AddListener(() => CharacterScene(1));
+        PlayButton.onClick.AddListener(() => CharacterScene("Instruction"));
         QuitButton = GameObject.Find("Quit Button").
             GetComponent<Button>();
         QuitButton.onClick.AddListener(() => Quit());
@@ -31,7 +31,7 @@ public class MainSceneButtons : MonoBehaviour
 #endif
     }
 
-    public void CharacterScene(int level)
+    public void CharacterScene(string level)
     {
         SceneManager.LoadScene(level);
     }
