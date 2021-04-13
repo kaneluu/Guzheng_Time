@@ -13,10 +13,10 @@ public class Tutorial : MonoBehaviour
     {
         SkipButton = GameObject.Find("Skip Button").
             GetComponent<Button>();
-        SkipButton.onClick.AddListener(() => CharacterScene(3));
+        SkipButton.onClick.AddListener(() => CharacterScene("Level-1"));
     }
 
-    public void CharacterScene(int level)
+    public void CharacterScene(string level)
     {
         SceneManager.LoadScene(level);
     }

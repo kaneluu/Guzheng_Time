@@ -8,6 +8,7 @@ public class Notes : MonoBehaviour
     Rigidbody2D rBody;
     public float speed;
 
+
     void Awake()
     {
         rBody = GetComponent<Rigidbody2D>();

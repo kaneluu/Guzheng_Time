@@ -37,6 +37,7 @@ public class PressedButtons : MonoBehaviour
                 Instantiate(generatedNote, transform.position, Quaternion.identity);
         }
 
+        //When we don't need to create the notes
         else
         {
             if (Input.GetKeyDown(Key))
@@ -45,6 +46,7 @@ public class PressedButtons : MonoBehaviour
             if (Input.GetKeyDown(Key) && pressed)
             {
                 Destroy(note);
+                AddScore();
                 StartCoroutine(Press());
             }
         }
@@ -63,6 +65,11 @@ public class PressedButtons : MonoBehaviour
     void OnTriggerExit2D(Collider2D collision)
     {
         pressed = false;
+    }
+
+    void AddScore()
+    {
+        PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + 100);
     }
 
     IEnumerator Press()
