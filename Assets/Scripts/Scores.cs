@@ -11,7 +11,7 @@ public class Scores : MonoBehaviour
     [System.Obsolete]
     void Awake()
     {
-        if(Application.loadedLevelName == "Level-1")
+        if(Application.loadedLevelName == "Level1")
         {
             PlayerPrefs.SetInt("Score", 0);
         }

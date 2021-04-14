@@ -19,7 +19,7 @@ public class Instruction : MonoBehaviour
         TutorialButton.onClick.AddListener(() => CharacterScene("Tutorial"));
         SkipButton = GameObject.Find("Skip Button").
                     GetComponent<Button>();
-        SkipButton.onClick.AddListener(() => CharacterScene("Level-1"));
+        SkipButton.onClick.AddListener(() => CharacterScene("Level1"));
         BackButton = GameObject.Find("Main Button").
                     GetComponent<Button>();
         BackButton.onClick.AddListener(() => CharacterScene("Main"));
