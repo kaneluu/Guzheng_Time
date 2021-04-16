@@ -8,7 +8,7 @@ public class MainSceneButtons : MonoBehaviour
 {
     public Button PlayButton;
     public Button QuitButton;
-
+    public Button CreditButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +16,9 @@ public class MainSceneButtons : MonoBehaviour
         PlayButton = GameObject.Find("Play Button").
             GetComponent<Button>();
         PlayButton.onClick.AddListener(() => CharacterScene("Instruction"));
+        CreditButton = GameObject.Find("Credit Button").
+            GetComponent<Button>();
+        CreditButton.onClick.AddListener(() => CharacterScene("Credit"));
         QuitButton = GameObject.Find("Quit Button").
             GetComponent<Button>();
         QuitButton.onClick.AddListener(() => Quit());
