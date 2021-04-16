@@ -42,9 +42,8 @@ public class EnableNextLevel : MonoBehaviour
             nextLevel.onClick.AddListener(() => CharacterScene("Level3"));
         else if(sceneName == "Level3")
             nextLevel.onClick.AddListener(() => CharacterScene("Level4"));
-
-
-
+        else if (sceneName == "Level4")
+            nextLevel.onClick.AddListener(() => CharacterScene("Result"));
     }
     public void CharacterScene(string level)
     {
