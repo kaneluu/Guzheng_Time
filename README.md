@@ -1,8 +1,8 @@
 # Guzheng_Time
 
-Title: Guzheng Time 
-Genre: Rhythm Game 
-Release date: April, 2021
+#Title: Guzheng Time 
+#Genre: Rhythm Game 
+#Release date: April, 2021
 Publisher: Quyen Luu
 Description:
 Have you ever felt fascinating when you accidentally hear the sound of a classic Chinese tune
