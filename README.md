@@ -27,3 +27,5 @@
 ### Game Plays
 - Game Controls: This game will use four arrows on the keyboard to press the corresponding Guzheng icons.
 - When the icon of the instrument coming down vertically, the player will need to press the icon accordingly to the Left, Up, Down, and Right arrow buttons on their keyboard. The yellow head of the icon indicates the direction of it.
+
+### For more information about credits, please click Assets->Documentation
